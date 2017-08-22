@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_jokenpo"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="canatustecnologia.com.br.jokenpo.JokenpoActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/escolha_a_jogada"
+        android:id="@+id/textview_opcoes"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/button_papel"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/pedra"
+        android:id="@+id/button_pedra"
+        android:layout_toLeftOf="@+id/button_papel"
+        android:layout_above="@+id/textview_ultima_jogada"
+        android:onClick="onClickPedra"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/papel"
+        android:id="@+id/button_papel"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/textview_ultima_jogada"
+        android:onClick="onClickPapel"
+        />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="@drawable/tesoura"
+        android:id="@+id/button_tesoura"
+        android:layout_toRightOf="@+id/button_papel"
+        android:layout_above="@+id/textview_ultima_jogada"
+        android:onClick="onClickTesoura"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ultima_jogada"
+        android:id="@+id/textview_ultima_jogada"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_resultado"
+        android:text="@string/resultado"
+        android:layout_below="@+id/textview_ultima_jogada"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_jogador"
+        android:text="@string/jogador"
+        android:layout_below="@+id/textview_ultima_jogada"
+        android:layout_toStartOf="@+id/button_papel" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_computador"
+        android:text="@string/computador"
+        android:layout_below="@+id/textview_ultima_jogada"
+        android:layout_toEndOf="@+id/button_papel" />
+
+    <ImageView
+        android:id="@+id/imagem_view_jogador"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/textview_resultado"
+        android:layout_toLeftOf="@+id/imagem_view_resultado"/>
+
+    <ImageView
+        android:id="@+id/imagem_view_resultado"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/textview_resultado"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/imagem_view_computador"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/textview_resultado"
+        android:layout_toRightOf="@+id/imagem_view_resultado"
+        />
+
+    <Button
+        android:layout_width="300px"
+        android:layout_height="150px"
+        android:id="@+id/button_ir_para_menu"
+        android:onClick="onClickButtonIrParaPrincipal"
+        android:text="@string/menu"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_alignEnd="@id/imagem_view_jogador"/>
+
+    <Button
+        android:layout_width="300px"
+        android:layout_height="150px"
+        android:id="@+id/button_ir_para_sobre"
+        android:onClick="onClickButtonIrParaSobre"
+        android:text="@string/sobre"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_alignBottom="@+id/button_ir_para_menu"
+        android:layout_alignEnd="@id/imagem_view_computador"
+    />
+
+
+
+</RelativeLayout>

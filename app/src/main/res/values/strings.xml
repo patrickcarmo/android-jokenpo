@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Jokenpo</string>
+    <string name="tela_principal">Tela Principal</string>
+    <string name="ir_para_sobre">Ir Para Sobre</string>
+    <string name="ir_para_jogo">Ir Para Jogo</string>
+    <string name="tela_sobre">Tela Sobre</string>
+    <string name="ir_para_jogo_sobre">Ir Para Jogo</string>
+    <string name="ir_para_principal_sobre">Ir Para Principal</string>
+    <string name="mais_informacoes_sobre">Mais Informações</string>
+    <string name="ligar_para_o_desenvolverdor_sobre">Ligar para o desenvolverdor</string>
+    <string name="tela_jogo">Tela Jogo</string>
+    <string name="ir_para_sobre_jogo">Ir para sobre</string>
+    <string name="ir_para_principal_jogo">Ir para principal</string>
+    <string name="escolha_a_jogada">Escolha a jogada</string>
+    <string name="ultima_jogada">Última jogada</string>
+    <string name="jogador">Jogador</string>
+    <string name="resultado">Resultado</string>
+    <string name="computador">Computador</string>
+    <string name="sobre">Sobre</string>
+    <string name="menu">Menu</string>
+</resources>
